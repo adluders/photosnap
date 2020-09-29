@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 4.17px;
+}
+
+h2 {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 16px;
+}
+
+h4 {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 77%;
+  margin: 0 auto;
+}
+
+.cta {
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0.75rem 1.5rem;
+}
+
+.cta:hover {
+  background-color: #dfdfdf;
+  color: #000;
+}
+
+.main-nav {
+  padding: 1.75rem 0;
+}
+
+.main-nav .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.main-nav__items {
+  display: flex;
+}
+
+.main-nav__item {
+  margin: 0 1.3rem;
+}
+
+.main-nav__link {
+  text-transform: uppercase;
+  color: #000;
+}
+
+.main-nav__link:hover {
+  color: #dfdfdf;
+}
+
+.main-nav__cta {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+/*# sourceMappingURL=main.css.map */

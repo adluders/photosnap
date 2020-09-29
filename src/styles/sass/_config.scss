@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+
+// Colors
+$main-accent: rgb(255, 197, 147),
+  linear-gradient(
+    45deg,
+    rgba(255, 197, 147, 1) 0%,
+    rgba(188, 113, 152, 1) 58%,
+    rgba(90, 119, 255, 1) 85%
+  );
+$main-black: #000;
+$light-grey: #dfdfdf;
+$main-white: #fff;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+// Typography
+h1 {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 4.17px;
+}
+
+h2 {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 16px;
+}
+
+h4 {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+}
+
+li {
+  list-style: none;
+}
+// utility classes
+.container {
+  width: 77%;
+  margin: 0 auto;
+}
+
+.cta {
+  background-color: $main-black;
+  color: $main-white;
+  text-transform: uppercase;
+  padding: 0.75rem 1.5rem;
+  &:hover {
+    background-color: $light-grey;
+    color: $main-black;
+  }
+}
