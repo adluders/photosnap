@@ -9,6 +9,7 @@ import NotFound from "./pages/NotFound";
 
 import "./styles/css/main.css";
 import Navbar from "./components/UI/Navbar";
+import Footer from "./components/UI/Footer";
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
         <Route path="/stories" component={Stories} exact />
         <Route path="/*" component={NotFound} exact />
       </Switch>
-      <h1>app</h1>
+      <Footer />
     </div>
   );
 }

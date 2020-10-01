@@ -28,6 +28,10 @@ a {
   text-decoration: none;
 }
 
+// img {
+//   width: 100%;
+// }
+
 // Typography
 h1 {
   font-size: 40px;
@@ -54,6 +58,7 @@ h4 {
 li {
   list-style: none;
 }
+
 // utility classes
 .container {
   width: 77%;
@@ -68,5 +73,78 @@ li {
   &:hover {
     background-color: $light-grey;
     color: $main-black;
+  }
+}
+
+.cta__invite {
+  color: $main-white;
+  text-transform: uppercase;
+  &.dark {
+    color: $main-black !important;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+  img {
+    margin-left: 1rem;
+  }
+}
+
+.showcase {
+  // border: solid red;
+  display: flex;
+  // align-items: stretch;
+  // grid-template-columns: repeat(2, 1fr);
+  &__details {
+    background-color: $main-black;
+    color: $main-white;
+    // grid-row: 1 / 3;
+    width: 42%;
+    div {
+      // border: solid green;
+      display: flex;
+      flex-direction: column;
+      margin: 11rem 7rem;
+      // align-items: center;
+      h1 {
+        text-transform: uppercase;
+        font-weight: 400;
+      }
+      p {
+        margin-top: 15px;
+      }
+      .cta__invite {
+        margin-top: 4rem;
+      }
+    }
+    &.dark-theme {
+      background-color: $main-black;
+      color: $main-white;
+    }
+    &.light-theme {
+      background-color: $main-white;
+      color: $main-black;
+      div > .cta__invite {
+        color: $main-black;
+      }
+    }
+  }
+  &__graphic {
+    // border: solid blue;
+    display: flex;
+    // width: 58%;
+    grid-row: 1 / 3;
+    img {
+      width: 100%;
+    }
+  }
+
+  .order {
+    &-1 {
+      order: 0;
+    }
+    &-2 {
+      order: 1;
+    }
   }
 }

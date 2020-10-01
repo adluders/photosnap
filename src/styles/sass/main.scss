@@ -27,3 +27,37 @@
     justify-content: flex-end;
   }
 }
+
+// Footer
+footer {
+  background-color: $main-black;
+  .main-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 4rem 0;
+    &__info,
+    &__ctas {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    &__info-social__link {
+      margin-right: 13px;
+    }
+    &__links {
+      li:not(:last-of-type) {
+        margin-bottom: 19px;
+      }
+    }
+    &__link {
+      color: $main-white;
+      text-transform: uppercase;
+      &:hover {
+        color: $light-grey;
+      }
+    }
+    &__ctas {
+      color: $main-white;
+    }
+  }
+}
