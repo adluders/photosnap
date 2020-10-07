@@ -28,6 +28,59 @@
   }
 }
 
+// Showcase
+
+.showcase {
+  display: flex;
+  &__details {
+    background-color: $main-black;
+    color: $main-white;
+    width: 42%;
+    div {
+      display: flex;
+      flex-direction: column;
+      margin: 11rem 7rem;
+      h1 {
+        text-transform: uppercase;
+        font-weight: 400;
+      }
+      p {
+        margin-top: 15px;
+      }
+      .cta__invite {
+        margin-top: 4rem;
+      }
+    }
+    &.dark-theme {
+      background-color: $main-black;
+      color: $main-white;
+    }
+    &.light-theme {
+      background-color: $main-white;
+      color: $main-black;
+      div > .cta__invite {
+        color: $main-black;
+      }
+    }
+  }
+  &__graphic {
+    display: flex;
+    grid-row: 1 / 3;
+    img {
+      width: 100%;
+    }
+  }
+
+  .order {
+    &-1 {
+      order: 0;
+    }
+    &-2 {
+      order: 1;
+    }
+  }
+}
+
 // Footer
 footer {
   background-color: $main-black;

@@ -1,10 +1,22 @@
 import React from "react";
+import Showcase from "../components/Showcase";
+import StoriesHolder from "../components/StoriesHolder";
+
 import Create from "../assets/home/desktop/create-and-share.jpg";
 import Stories from "../assets/home/desktop/beautiful-stories.jpg";
 import Designed from "../assets/home/desktop/designed-for-everyone.jpg";
-import Showcase from "../components/Showcase";
+import Mountains from "../assets/stories/desktop/mountains.jpg";
+import Building from "../assets/stories/desktop/cityscapes.jpg";
+import Voyage from "../assets/stories/desktop/18-days-voyage.jpg";
+import Architecture from "../assets/stories/desktop/architecturals.jpg";
 
 const Home = () => {
+  const info = {
+    pics: [Mountains, Building, Voyage, Architecture],
+    storyTitles: ["title 1", "title 2", "title 3", "title 4"],
+    storyAuthor: ["auth 1", " auth 2", "auth 3", "auth 4"],
+  };
+
   return (
     <section>
       <Showcase
@@ -24,6 +36,7 @@ const Home = () => {
         photo={<img src={Stories} alt="" />}
         isPicFirst
         isDarkTheme={false}
+        showcaseTheme
       />
 
       <Showcase
@@ -32,7 +45,10 @@ const Home = () => {
         photo={<img src={Designed} alt="" />}
         isTextFirst
         isDarkTheme={false}
+        showcaseTheme
       />
+
+      <StoriesHolder info={info} />
     </section>
   );
 };

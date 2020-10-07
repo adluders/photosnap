@@ -9,6 +9,7 @@ const Showcase = ({
   isDarkTheme,
   isTextFirst,
   isPicFirst,
+  showcaseTheme,
 }) => {
   return (
     <div className="showcase">
@@ -24,7 +25,7 @@ const Showcase = ({
             userRoute="/"
             customClasses="cta__invite"
             text={"get an invite"}
-            isLightTheme
+            isLightTheme={showcaseTheme}
           />
         </div>
       </div>
