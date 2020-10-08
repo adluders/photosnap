@@ -11,11 +11,32 @@ import Voyage from "../assets/stories/desktop/18-days-voyage.jpg";
 import Architecture from "../assets/stories/desktop/architecturals.jpg";
 
 const Home = () => {
-  const info = {
-    pics: [Mountains, Building, Voyage, Architecture],
-    storyTitles: ["title 1", "title 2", "title 3", "title 4"],
-    storyAuthor: ["auth 1", " auth 2", "auth 3", "auth 4"],
-  };
+  const info = [
+    {
+      id: 0,
+      pic: Mountains,
+      storyTitle: "The Mountains",
+      storyAuthor: "by John Appleseed",
+    },
+    {
+      id: 1,
+      pic: Building,
+      storyTitle: "Sunset Cityscapes",
+      storyAuthor: "by Benjamin Cruz",
+    },
+    {
+      id: 2,
+      pic: Voyage,
+      storyTitle: "18 Days Voyage",
+      storyAuthor: "by Alexei Borodin",
+    },
+    {
+      id: 3,
+      pic: Architecture,
+      storyTitle: "Architecturals",
+      storyAuthor: "by Samantha Brooke",
+    },
+  ];
 
   return (
     <section>

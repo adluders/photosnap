@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 // import Mountain from "../../assets/stories/desktop/mountains.jpg";
 import CustomLink from "./CustomLink";
 
-const Story = ({ photo, story_title, story_author }) => {
+const Story = ({ photo, storyTitle, storyAuthor }) => {
   return (
     <div className="story">
       <div className="story__overlay"></div>
@@ -14,8 +14,8 @@ const Story = ({ photo, story_title, story_author }) => {
 
       <div className="story__details">
         <div className="story__text">
-          <h2>{story_title}</h2>
-          <p>{story_author}</p>
+          <h2>{storyTitle}</h2>
+          <p>{storyAuthor}</p>
         </div>
 
         <CustomLink
@@ -29,8 +29,8 @@ const Story = ({ photo, story_title, story_author }) => {
 };
 
 Story.prototypes = {
-  story_title: PropTypes.string.isRequired,
-  story_author: PropTypes.string.isRequired,
+  storyTitle: PropTypes.string.isRequired,
+  storyAuthor: PropTypes.string.isRequired,
 };
 
 export default Story;
