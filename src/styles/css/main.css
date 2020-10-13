@@ -292,7 +292,7 @@ footer .main-footer__ctas {
   }
 }
 
-@media screen and (min-width: 200px) and (max-width: 375px) {
+@media screen and (min-width: 375px) {
   .showcase {
     flex-direction: column;
   }
