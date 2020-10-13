@@ -1,16 +1,28 @@
-import React from "react";
-// import Arrow from "../assets/shared/desktop/arrow.svg";
+import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types";
+
 import CustomLink from "./UI/CustomLink";
 
 const Showcase = ({
   heading,
   text,
   photo,
+  mobilePhoto,
+  tabletPhoto,
   isDarkTheme,
   isTextFirst,
   isPicFirst,
   showcaseTheme,
 }) => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  const updateWidth = () => setWindowWidth(window.innerWidth);
+
+  useEffect(() => {
+    window.addEventListener("resize", updateWidth);
+    return () => window.removeEventListener("resize", updateWidth);
+  }, []);
+
   return (
     <div className="showcase">
       <div
@@ -33,10 +45,24 @@ const Showcase = ({
       <div
         className={`showcase__graphic ${isPicFirst ? "order-1" : "order-2"}  `}
       >
-        {photo}
+        {(windowWidth <= 375 && mobilePhoto) ||
+          (windowWidth <= 768 && tabletPhoto) ||
+          (windowWidth >= 769 && photo)}
       </div>
     </div>
   );
+};
+
+Showcase.propTypes = {
+  heading: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  photo: PropTypes.string.isRequired,
+  mobilePhoto: PropTypes.string.isRequired,
+  tabletPhoto: PropTypes.string.isRequired,
+  isDarkTheme: PropTypes.bool.isRequired,
+  isTextFirst: PropTypes.bool.isRequired,
+  isPicFirst: PropTypes.bool.isRequired,
+  showcaseTheme: PropTypes.bool.isRequired,
 };
 
 export default Showcase;

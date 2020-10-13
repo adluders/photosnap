@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/shared/desktop/logo.svg";
-import CustomLink from "./CustomLink";
 
 const Navbar = () => {
   return (
@@ -30,7 +29,9 @@ const Navbar = () => {
         </ul>
 
         <div className="main-nav__cta">
-          <CustomLink userRoute="/" customClasses="cta" text="get an invite" />
+          <Link to="/" className="cta">
+            get an invite
+          </Link>
         </div>
       </div>
     </nav>

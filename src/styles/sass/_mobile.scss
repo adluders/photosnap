@@ -1,0 +1,36 @@
+@media screen and (max-width: 375px) {
+  .showcase {
+    flex-direction: column;
+    &__details {
+      width: 100%;
+      order: 10 !important;
+      div {
+        margin: 4.5rem 1.5rem;
+      }
+    }
+  }
+  .stories-holder {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  footer {
+    .main-footer {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      & > div:first-of-type {
+        & > div {
+          margin-top: 2rem;
+        }
+      }
+      & > ul {
+        margin-top: 3.2rem;
+        margin-bottom: 7.5rem;
+      }
+      & > div:last-of-type {
+        & > p {
+          margin-top: 2.1rem;
+        }
+      }
+    }
+  }
+}

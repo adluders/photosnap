@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-// import Mountain from "../../assets/stories/desktop/mountains.jpg";
 import CustomLink from "./CustomLink";
 
 const Story = ({ photo, storyTitle, storyAuthor }) => {
