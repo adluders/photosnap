@@ -56,13 +56,13 @@ const Showcase = ({
 Showcase.propTypes = {
   heading: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
-  photo: PropTypes.string.isRequired,
-  mobilePhoto: PropTypes.string.isRequired,
-  tabletPhoto: PropTypes.string.isRequired,
+  photo: PropTypes.object.isRequired,
+  mobilePhoto: PropTypes.object.isRequired,
+  tabletPhoto: PropTypes.object.isRequired,
   isDarkTheme: PropTypes.bool.isRequired,
-  isTextFirst: PropTypes.bool.isRequired,
-  isPicFirst: PropTypes.bool.isRequired,
-  showcaseTheme: PropTypes.bool.isRequired,
+  isTextFirst: PropTypes.bool,
+  isPicFirst: PropTypes.bool,
+  showcaseTheme: PropTypes.bool,
 };
 
 export default Showcase;

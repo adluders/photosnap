@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 import CustomLink from "./CustomLink";
 
-const Story = ({ photo, storyTitle, storyAuthor }) => {
+const Story = ({ writtenDate, photo, storyTitle, storyAuthor }) => {
   return (
     <div className="story">
       <div className="story__overlay"></div>
@@ -13,6 +13,7 @@ const Story = ({ photo, storyTitle, storyAuthor }) => {
 
       <div className="story__details">
         <div className="story__text">
+          <small>{writtenDate}</small>
           <h2>{storyTitle}</h2>
           <p>{storyAuthor}</p>
         </div>

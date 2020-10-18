@@ -12,6 +12,7 @@ const StoriesHolder = ({ info }) => {
           photo={item.pic}
           storyTitle={item.storyTitle}
           storyAuthor={item.storyAuthor}
+          writtenDate={item.writtenDate}
         />
       ))}
     </div>

@@ -29,7 +29,6 @@
 }
 
 // Showcase
-
 .showcase {
   display: flex;
   &__details {
@@ -80,6 +79,49 @@
     }
     &-2 {
       order: 1;
+    }
+  }
+}
+
+// Stories
+.stories {
+  &__hero {
+    background-image: url("../../assets/stories/desktop/moon-of-appalacia.jpg");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    &-info {
+      color: $main-white;
+      max-width: 27%;
+      margin: 7.5rem auto 7.5rem 7rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    &-label {
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+    &-title {
+      text-transform: uppercase;
+      font-weight: 100;
+    }
+    &-date {
+      text-transform: capitalize;
+      span {
+        font-weight: 700;
+      }
+    }
+    &-details {
+      margin: 1.5rem 0;
+    }
+    &-cta {
+      color: $main-white;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 46%;
     }
   }
 }
