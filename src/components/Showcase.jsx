@@ -13,6 +13,7 @@ const Showcase = ({
   isTextFirst,
   isPicFirst,
   showcaseTheme,
+  customLink,
 }) => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -33,12 +34,14 @@ const Showcase = ({
         <div>
           <h1>{heading}</h1>
           <p>{text}</p>
-          <CustomLink
-            userRoute="/"
-            customClasses="cta__invite"
-            text={"get an invite"}
-            isLightTheme={showcaseTheme}
-          />
+          {customLink && (
+            <CustomLink
+              userRoute="/"
+              customClasses="cta__invite"
+              text={"get an invite"}
+              isLightTheme={showcaseTheme}
+            />
+          )}
         </div>
       </div>
 

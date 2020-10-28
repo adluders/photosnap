@@ -92,6 +92,7 @@ const Home = () => {
         isPicFirst={false}
         isTextFirst
         isDarkTheme
+        customLink
       />
 
       <Showcase
@@ -107,6 +108,7 @@ const Home = () => {
         isPicFirst
         isDarkTheme={false}
         showcaseTheme
+        customLink
       />
 
       <Showcase
@@ -122,6 +124,7 @@ const Home = () => {
         isTextFirst
         isDarkTheme={false}
         showcaseTheme
+        customLink
       />
 
       <StoriesHolder info={info} />
