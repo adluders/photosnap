@@ -18,7 +18,7 @@ const CustomLink = ({ userRoute, customClasses, text, isLightTheme }) => {
 };
 
 CustomLink.defaultProps = {
-  icon: "",
+  userRoute: "/",
   customClasses: "",
   text: "",
   isLightTheme: false,

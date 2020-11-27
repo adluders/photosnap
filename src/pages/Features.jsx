@@ -11,6 +11,7 @@ import Embed from "../assets/features/desktop/embed.svg";
 import Domain from "../assets/features/desktop/custom-domain.svg";
 import Exposure from "../assets/features/desktop/boost-exposure.svg";
 import DragDrop from "../assets/features/desktop/drag-drop.svg";
+import BetaBanner from "../components/UI/BetaBanner";
 
 const Features = () => {
   const topFeatures = [
@@ -74,6 +75,8 @@ const Features = () => {
 
       <FeaturesContainer featuresList={topFeatures} />
       <FeaturesContainer featuresList={secondaryFeatures} />
+
+      <BetaBanner />
     </div>
   );
 };

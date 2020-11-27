@@ -1,32 +1,5 @@
 @import "./config";
-
-// Navbar
-.main-nav {
-  padding: 1.75rem 0;
-  & .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-  }
-  &__items {
-    display: flex;
-  }
-  &__item {
-    margin: 0 1.3rem;
-  }
-  &__link {
-    text-transform: uppercase;
-    color: $main-black;
-    &:hover {
-      color: $light-grey;
-    }
-  }
-  &__cta {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-  }
-}
+@import "./ui";
 
 // Showcase
 .showcase {
@@ -126,39 +99,7 @@
   }
 }
 
-// Footer
-footer {
-  background-color: $main-black;
-  .main-footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 4rem 0;
-    &__info,
-    &__ctas {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    &__info-social__link {
-      margin-right: 13px;
-    }
-    &__links {
-      li:not(:last-of-type) {
-        margin-bottom: 19px;
-      }
-    }
-    &__link {
-      color: $main-white;
-      text-transform: uppercase;
-      &:hover {
-        color: $light-grey;
-      }
-    }
-    &__ctas {
-      color: $main-white;
-    }
-  }
-}
+// Pricing
 
 @import "./tablet";
 @import "./mobile";
