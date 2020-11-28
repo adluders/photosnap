@@ -486,7 +486,7 @@ footer .main-footer__ctas {
   }
 }
 
-@media screen and (min-width: 100px) and (max-width: 450px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
   .mobile-nav__header {
     display: flex;
     align-items: center;
