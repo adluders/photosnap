@@ -24,7 +24,7 @@ const App = () => {
 
   return (
     <div className="App">
-      {windowWidth <= 375 ? <MobileNav /> : <Navbar />}
+      {windowWidth <= 450 ? <MobileNav /> : <Navbar />}
       <Switch>
         <Route path="/" component={Home} exact />
         <Route path="/features" component={Features} exact />
